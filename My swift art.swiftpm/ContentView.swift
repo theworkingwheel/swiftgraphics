@@ -14,7 +14,7 @@ struct CustomCircle: View {
         Circle()
             .fill(.purple)
             .frame(width: size, height: size)
-            .position(x: 50, y: 45)
+           .position(x: 300, y: 5)
 
         
             
