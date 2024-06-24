@@ -8,7 +8,7 @@ struct CustomCircle: View {
         Rectangle()
             .fill(.green)
             .frame(width: 25, height: 20)
-            .position(x: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/, y: 635)
+            .position(x: 10.0, y: 635)
             
         
         Circle()
@@ -25,7 +25,7 @@ struct CustomCircle: View {
         
         Triangle()
             .fill(Color.blue)
-            .frame(width: 200, height: 30)
+            .frame(width: 200, height: 330)
         
         
         
