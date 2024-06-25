@@ -1,10 +1,17 @@
 import SwiftUI
 
+
+
 struct CustomCircle: View {
+    
+
+    
     var color: Color
     var size: CGFloat
     
     var body: some View {
+        
+        
         Rectangle()
             .fill(.green)
             .frame(width: 25, height: 20)
@@ -46,17 +53,31 @@ struct Triangle: Shape {
 
 
 
-
-
 struct ContentView: View {
+    @State private var count = 0
+    
     var body: some View {
+        
         VStack {
             
-            
+            Button(action: {count += 1}) 
+            {
+                  Text("Increment")
+                    .font(.headline)
+                                                        } 
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                
+                Text("Count: \(count)")
+
            
             CustomCircle(color: .red, size: 56)
           // CustomCircle(color: .green, size: 75)
            // CustomCircle(color: .blue, size: 50)
+            
+
         }
         .padding()
     }
